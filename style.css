@@ -31,7 +31,8 @@ h1{
     margin: 300px 40%;
     font-size: 20px;
     font-weight: 500;
-    transition:  3s;
+    transition:  2s;
+    border-radius: 10px;
   }
 
 .birthday_btn:hover{
