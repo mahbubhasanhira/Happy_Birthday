@@ -158,9 +158,17 @@ document.ontouchstart = evt => birthday.onClick(evt)
 
 const birthDay_container = document.querySelector('.birthDay_container');
 const birthday_btn = document.querySelector('.birthday_btn')
-
-    birthday_btn.addEventListener('click', () => {
-
-        birthDay_container.style.display = 'block';
-        birthday_btn.style.display = 'none';
-    });
+const name = document.getElementById('name');
+  
+      birthday_btn.addEventListener('click', () => {   
+          const input = document.getElementById('input');
+          if(input.value.length == 0){
+            alert('Please Type Your Name');
+          }
+          else if(input.value.length > 1){
+              input.style.display = 'none';
+              name.textContent = input.value;
+              birthDay_container.style.display = 'block';
+              birthday_btn.style.display = 'none';
+          }
+      });

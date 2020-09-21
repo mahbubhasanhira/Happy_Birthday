@@ -1,10 +1,11 @@
 body {
-    margin: -50px 0 0  0 ;
+    /* margin: -50px 0 0  0 ; */
     background: #020202;
   }
 
 .birthDay_container{
     display: none;
+    text-align: center;
   }
 
 canvas{
@@ -14,7 +15,8 @@ canvas{
 h1{
     position: absolute;
     top: 20%;
-    left: 20%;
+    left: 10%;
+    right: 10%;
     /* transform: translate(-50%, -50%); */
     color: #fff;
     font-family: "Source Sans Pro";
@@ -23,12 +25,42 @@ h1{
     -webkit-user-select: none;
     user-select: none;
   }
+  h3{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    right: 30%;
+    color: #fff;
+    font-family: "Source Sans Pro";
+    font-size: 3em;
+    font-weight: 800;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  #input{
+    width: 300px;
+    background-color: rgb(137, 243, 178);
+    border: none;  
+    padding: 5px 0;
+    margin: 300px 40% 0 40%;
+    font-size: 20px;
+    font-weight: 500;
+    transition:  2s;
+    border-radius: 10px;
+    text-align: center;
+  }
+  #input:focus{
+    border: none;
+    background-color: rgb(255, 255, 255);
+  }
 .birthday_btn{
+    text-align: center;
+    width: 300px;
     background-color: rgb(188, 224, 255);
     border: none; 
     cursor: pointer;  
-    padding: 5px 15px;
-    margin: 300px 40%;
+    padding: 5px 20px;
+    margin: 30px 40%;
     font-size: 20px;
     font-weight: 500;
     transition:  2s;
@@ -38,15 +70,27 @@ h1{
 .birthday_btn:hover{
    background-color: rgb(22, 197, 116);
   }
-.author{
-    color: white;
-    text-align: end;
-  }
 
-  @media(max-width:360px){
+
+  @media(max-width:600px){
     h1{
+      top: 5%;
       left: 5%;
       right: 5%;
       text-align: center;
+    }
+    h3{
+      left: 5%;
+      right: 5%;
+    }
+    #input{
+      width: 60%;
+      padding: 5px 0;
+      margin: 30% 20% 0 20%;
+
+    }
+    .birthday_btn{
+      width: 60%;
+      margin: 30px 20%;
     }
   }
